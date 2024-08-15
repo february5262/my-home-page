@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import { useCameraContext } from '../context/CameraContext';
+import { useCameraContext } from '../../../context/CameraContext';
 import * as THREE from 'three';
 
 const Particles = ({ count }) => {

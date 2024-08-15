@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import { useCameraContext } from '../context/CameraContext';
+import { useCameraContext } from '../../context/CameraContext';
 
 export const HoverArea = () => {
     const [isHovered, setIsHovered] = useState(false);

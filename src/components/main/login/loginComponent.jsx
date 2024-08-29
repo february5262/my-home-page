@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { signInWithGoogle,signOut } from '../../../api/api';
 import { createClient } from '@supabase/supabase-js'
-import './loginComponent.css';
+import './loginComponent.module.css';
 
 export const Login = () => {
 

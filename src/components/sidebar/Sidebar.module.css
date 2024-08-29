@@ -1,0 +1,56 @@
+.hoverArea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background-color: 'red'; */
+  color: white;
+  z-index: 1;
+  height: 100%;
+  width: 250px;
+}
+
+.categoryVisible {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0; /* 숨긴 상태의 초기 위치 */
+  width: 250px;
+  height: 100%;
+  background-color: 'transparent';
+  /* box-shadow: 2px 0 5px rgba(0,0,0,0.3); */
+  overflow: hidden;
+  transition: left 0.3s ease;
+}
+.categoryHide {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -250px; /* 숨긴 상태의 초기 위치 */
+  width: 250px;
+  height: 100%;
+  background-color: 'transparent';
+  /* box-shadow: 2px 0 5px rgba(0,0,0,0.3); */
+  overflow: hidden;
+  transition: left 0.3s ease;
+}
+
+/* 
+.category ul {
+  list-style: none;
+  padding: 40px;
+}
+
+.category li {
+  color:#ddd;
+  margin: 40px 0;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.category li:hover {
+  font-weight: 900;
+} */

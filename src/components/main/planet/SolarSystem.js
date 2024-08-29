@@ -99,11 +99,11 @@ const SolarSystemScene = () => {
 
             {/* Planets */}
             <Planet name="Planet 1" color="white" distance={10} size={1} speed={0.5} />
-            <Planet name="Planet 2" color="white" distance={15} size={1.5} speed={0.3} />
             <Planet name="Planet 3" color="white" distance={20} size={2} speed={0.2} />
+            <Planet name="Planet 2" color="white" distance={15} size={1.5} speed={0.3} />
             <Planet name="Planet 4" color="white" distance={25} size={2.5} speed={0.1} />
             
-            <Particles count={1000} />
+            {/* <Particles count={1000} /> */}
 
             <OrbitControls />
         </>

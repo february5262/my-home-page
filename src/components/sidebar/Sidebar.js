@@ -1,7 +1,9 @@
-import React,{useState} from 'react';
+import React,{useEffect, useState} from 'react';
 import { useCameraContext } from '../../context/CameraContext';
+import { Link } from 'react-router-dom';
+import styles from "./Sidebar.module.css";
 
-export const HoverArea = () => {
+export const SideBar = () => {
     const [isHovered, setIsHovered] = useState(false);
 
     const handleMouseEnter = () => {
@@ -17,7 +19,7 @@ export const HoverArea = () => {
     }
     return (
         <div 
-            className="hover-area"
+            className={styles.hoverArea}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
@@ -34,16 +36,20 @@ export const CategorySection = ({ isVisible }) => {
         console.log("카테고리;"+index);
     }
     const categoryContents = [
-        {name:'MAIN'},
-        {name:'PROJECTS'},
-        {name:'CONTECT'},
+        {name:'MAIN', path:'/planet-web'},
+        // {name:'PROJECTS', path:'/projects'},
+        {name:'CONTACT', path:'/contact'},
     ];
     return (
-        <div className={`category-section ${isVisible ? 'visible' : ''}`}>
+        <div className={isVisible?styles.categoryVisible:styles.categoryHide}>
             <ul>
                 {categoryContents.map((item,index)=>{
                     return(
-                        <li key={index} onClick={()=>handleClick(index)}>{item.name}</li>
+                        <li key={index} onClick={()=>handleClick(index)}>
+                            <Link to={item.path}>
+                            {item.name}
+                        </Link>
+                        </li>
                     )
                 })}
             </ul>

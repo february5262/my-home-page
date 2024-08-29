@@ -1,55 +1,6 @@
 .app {
   position: relative;
   height: 100vh;
-  display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.hover-area {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: 'transparent';
-  color: white;
-  z-index: 1;
-  height: 100%;
-  width: 250px;
-}
-
-.category-section {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: -250px; /* 숨긴 상태의 초기 위치 */
-  width: 250px;
-  height: 100%;
-  background-color: 'transparent';
-  /* box-shadow: 2px 0 5px rgba(0,0,0,0.3); */
-  overflow: hidden;
-  transition: left 0.3s ease;
-}
-
-.category-section.visible {
-  left: 0; /* hover 시 보이도록 위치 변경 */
-}
-
-.category-section ul {
-  list-style: none;
-  padding: 40px;
-}
-
-.category-section li {
-  color:#ddd;
-  margin: 40px 0;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.category-section li:hover {
-  font-weight: 900;
 }

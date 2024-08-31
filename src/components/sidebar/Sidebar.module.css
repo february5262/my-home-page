@@ -34,23 +34,22 @@
   transition: left 0.3s ease;
 }
 
-/* 
-.category ul {
+.categoryList{
   list-style: none;
   padding: 40px;
 }
 
-.category li {
-  color:#ddd;
+.categoryListContent {
   margin: 40px 0;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 900;
 }
 
-.category li:hover {
-  font-weight: 900;
-} */
+.categoryText{
+  color:#ddd;
+  text-decoration:none;
+}

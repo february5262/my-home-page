@@ -1,7 +1,12 @@
-.login-container{
+.LoginContainer{
     position: absolute;
     z-index: 99999;
     width: 200px;
     height: 100px;
+    top: 40%;
+    right: 40%;
     background-color: '#ffffff';
+}
+.LoginText {
+    color: #fff;
 }

@@ -1,7 +1,7 @@
 // src/App.js
 
 import React, { useState } from 'react';
-// import './Contact.module.css';
+import styles from './Contact.module.css';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -31,11 +31,12 @@ function Contact() {
   };
 
   return (
-    <div className="container">
-      <h1>Contact Us</h1>
+    <div className={styles.container}>
+      <div className={styles.subContainer}>
+      <h1>Contact Me</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Name:</label>
+          <label>Name(Or Company):</label>
           <input 
             type="text" 
             name="name" 
@@ -65,6 +66,7 @@ function Contact() {
         </div>
         <button type="submit">Submit</button>
       </form>
+      </div>
     </div>
   );
 }

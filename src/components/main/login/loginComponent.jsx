@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import { signInWithGoogle,signOut } from '../../../api/api';
 import { createClient } from '@supabase/supabase-js'
-import './loginComponent.module.css';
+import styles from './loginComponent.module.css';
 
 export const Login = () => {
 
   return (
-    <div className="login-container">
-      <h1>Planet</h1>
+    <div className={styles.LoginContainer}>
+      <h1 className={styles.LoginText}>Planet</h1>
       <button onClick={signInWithGoogle}>Sign in with Google</button>
     </div>
   )
@@ -40,7 +40,7 @@ export const LogOut = () => {
   //   }
   // }, [])
   return (
-    <div className="login-container">
+    <div className={styles.LoginContainer}>
       <h1>Supabase Google Login</h1>
       <button onClick={signInWithGoogle}>Sign in with Google</button>
       <button onClick={signOut}>Sign out</button>

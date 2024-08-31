@@ -36,18 +36,18 @@ export const CategorySection = ({ isVisible }) => {
         console.log("카테고리;"+index);
     }
     const categoryContents = [
-        {name:'MAIN', path:'/planet-web'},
+        {name:'MAIN', path:'/'},
         // {name:'PROJECTS', path:'/projects'},
         {name:'CONTACT', path:'/contact'},
     ];
     return (
         <div className={isVisible?styles.categoryVisible:styles.categoryHide}>
-            <ul>
+            <ul className={styles.categoryList}>
                 {categoryContents.map((item,index)=>{
                     return(
-                        <li key={index} onClick={()=>handleClick(index)}>
-                            <Link to={item.path}>
-                            {item.name}
+                        <li className={styles.categoryListContent} key={index} onClick={()=>handleClick(index)}>
+                        <Link to={item.path} style={{textDecoration:'none'}}>
+                            <p className={styles.categoryText}>{item.name}</p>
                         </Link>
                         </li>
                     )

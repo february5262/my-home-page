@@ -5,10 +5,10 @@ import { Home } from './components/main/Home';
 
 export const RouterComp = () => {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename='/planet-web'>
           <SideBar/>
           <Routes>
-            <Route path="/planet-web" element={<Home/>} />
+            <Route path="/" element={<Home/>} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
       </BrowserRouter>
